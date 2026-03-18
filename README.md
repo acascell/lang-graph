@@ -57,4 +57,27 @@ graph.set_entry_point("start_node")
 
 End node -> special function which terminates the execution
 
-Checkpointing -> saving state between steps, used mostly for recovery, persistence, long running workflows
+Checkpointing -> saving state between steps, used mostly for recovery, persistence, long running workflows - Think -> resume agent later
+
+Streaming --> its a partial output that gets emitted during the exeuction and its useful for UI updates and for real-time feedback
+
+Memory can be of different types 1. short tem -> stored in the current state 2. long term -> stored in external storage like db or vector db
+
+Subgraph -> graph another graph - enables modular design and reusable workflows
+
+deterministic flow -> has a fixed path and its predictible 
+agentic flow -> LLM decies and has dynamic routing  - real systems use both approaches
+
+MENTAL MODEL
+- state = data
+- nodes = functions
+- edges = control flow
+- LLM = decision engne
+- graph = whole system
+
+FLOW EXAMPLE
+
+User question -> retriever node (RAG)
+-> LLM decision mode -> needs tool?
+-> yes - tool node - back to llm
+-> no - answer node - END
