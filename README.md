@@ -81,3 +81,5 @@ User question -> retriever node (RAG)
 -> LLM decision mode -> needs tool?
 -> yes - tool node - back to llm
 -> no - answer node - END
+
+# ARCHITECTURE

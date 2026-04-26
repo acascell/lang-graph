@@ -1,5 +1,0 @@
-# Architectural diagram using lang graph and agentcore runtime
-![architecture_efs.png](architecture_efs.png)
-![architecture_lambda.png](architecture_lambda.png)
-![architecture_tools_decision.png](architecture_tools_decision.png)
-![architecture_lex_connect.png](architecture_lex_connect.png)
